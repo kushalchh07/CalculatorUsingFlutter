@@ -1,0 +1,33 @@
+
+  String _expression = '';
+  String _result = '';
+
+  void _onPressed(String text) {
+    setState(() {
+      if (text == '=') {
+        _evaluateExpression();
+      } else if (text == 'C') {
+        _clear();
+      } else {
+        _expression += text;
+      }
+    });
+  }
+
+  void _evaluateExpression() {
+    // try {
+    //   Parser p = Parser();
+    //   Expression exp = p.parse(_expression);
+    //   ContextModel cm = ContextModel();
+    //   _result = '${exp.evaluate(EvaluationType.REAL, cm)}';
+    // } catch (e) {
+    //   _result = 'Error';
+    // }
+  }
+
+  void _clear() {
+    _expression = '';
+    _result = '';
+  }
+
+ 
