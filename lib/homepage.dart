@@ -1,6 +1,8 @@
 // import 'dart:html';
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:math_expressions/math_expressions.dart';
 
 class HomePage extends StatefulWidget {
@@ -57,7 +59,7 @@ class _HomePageState extends State<HomePage> {
           child: Container(
             padding: EdgeInsets.all(12),
             height: 600,
-            width: 400,
+            // width: Get.width * 0.8,
             decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
@@ -75,8 +77,8 @@ class _HomePageState extends State<HomePage> {
                 Center(
                   child: Container(
                     padding: EdgeInsets.all(8),
-                    height: 80,
-                    width: 370,
+                    height: 100,
+                    width: 400,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.end,
                       crossAxisAlignment: CrossAxisAlignment.end,
